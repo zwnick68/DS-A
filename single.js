@@ -56,7 +56,7 @@ class singlyLinkedList {
     shift() {
 
         if(!this.head) return undefined
-        var currentHead = this.head
+        let currentHead = this.head
         this.head = currentHead.next
         this.length--
         if(this.length === 0){
@@ -155,15 +155,21 @@ class singlyLinkedList {
 
 let list = new singlyLinkedList()
 
-list.unshift("pussy")
-list.unshift("boi")
-list.unshift(99)
-list.unshift(45)
-list.unshift("gay")
-list.unshift("mhm")
+// list.unshift("pussy")
+// list.unshift("boi")
+// list.unshift(99)
+// list.unshift(45)
+// list.unshift("gay")
+// list.unshift("mhm")
+
+list.push(1)
+list.push(2)
+list.push(3)
+list.push(4)
+
 
 
 
 console.log(list.print())
-console.log(list.reverse())
-console.log(list.print())
+// console.log(list.reverse())
+// console.log(list.print())
